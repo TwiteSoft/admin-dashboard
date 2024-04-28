@@ -4316,9 +4316,17 @@ html:has(.drawer-toggle:checked) {
   background-color: ##24303F;
 }
 
+.dark\:bg-\[\]:where(.dark, .dark *) {
+  background-color: ;
+}
+
 .dark\:text-white:where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.dark\:text-\[\]:where(.dark, .dark *) {
+  color: ;
 }
 
 .dark\:drop-shadow-none:where(.dark, .dark *) {
