@@ -3919,6 +3919,10 @@ html:has(.drawer-toggle:checked) {
     gap: 1px;
   }
 
+  .lg\:p-5 {
+    padding: 1.25rem;
+  }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
