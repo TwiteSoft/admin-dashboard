@@ -128,7 +128,7 @@
     </div>
 
     <div class="main sm:w-full md:w-full dark:bg-[#1C2434] bg-white dark:text-white text-black">
-      <header class="sticky top-0 z-999 flex w-full bg-white dark:bg-[#24303F] drop-shadow-1 dark:drop-shadow-none">
+      <header class="sticky top-0 right-0 left-0  flex w-full bg-white dark:bg-[#24303F] drop-shadow-1 dark:drop-shadow-none">
         <div
           class="flex flex-grow items-center justify-end md:justify-end lg:justify-between px-4 py-4 shadow-2 md:px-6 2xl:px-11">
           <div class="hidden lg:block">
@@ -469,7 +469,7 @@
       </header>
 
       <!-- content -->
-      <section class="p-6">
+      <section class="p-6 overflow-hidden">
         <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4 ">
           <div class="p-6 bg-[#FFFFFF] shadow rounded-md dark:bg-[#24303F]">
             <div class="flex items-center gap-8">
@@ -567,9 +567,9 @@
           </div>
         </div>
 
-        <div class="flex gap-8">
-          <div class="w-7/12 shadow p-[30px] rounded-md mt-10">
-            <div class="flex justify-between gap-3 sm:flex-nowrap">
+        <div class="md:flex  gap-8">
+          <div class="lg:w-[800px] shadow lg:p-[30px] p-3 rounded-md mt-10">
+            <div class="flex justify-between gap-3">
               <div class="flex  gap-3 sm:gap-5">
                 <div class="w-full">
                   <p class="font-semibold text-primary">Total Revenue</p>
@@ -585,7 +585,7 @@
                 </div>
               </div>
               <div class="">
-                <div class="inline-flex items-center rounded-md bg-[#F5F7FD] dark:bg-[#24303F] p-1.5 dark:bg-meta-4">
+                <div class="lg:flex  rounded-md bg-[#F5F7FD]  dark:bg-[#24303F] ">
                   <button
                     class="rounded bg-white shadow px-3 py-1 text-xs font-medium text-black shadow-card  dark:hover:bg-black  dark:bg-[#24303F] dark:text-white ">
                     Day
@@ -602,13 +602,13 @@
               </div>
             </div>
             <div>
-              <div class="w-[600px] ">
-                <canvas id="lineChart"></canvas>
+              <div class="max-w-full">
+                <canvas id="lineChart" class="w-full h-full"></canvas>
               </div>
             </div>
           </div>
 
-          <div class="shadow mt-10 rounded-md w-full">
+          <div class="shadow mt-10 rounded-md lg:w-[600px]">
             <div class="flex justify-around my-4">
               <h4 class="text-xl font-bold text-black dark:text-white">
                 Visitors Analytics
@@ -632,7 +632,7 @@
               </div>
             </div>
             <div class="flex justify-center items-center  ">
-              <div class="">
+              <div class="p-5">
                 <canvas id="doughnutChart"></canvas>
               </div>
             </div>
