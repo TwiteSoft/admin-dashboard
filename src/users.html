@@ -14,16 +14,11 @@
 <body>
   <div class="w-full flex">
     <!-- left-sidebar -->
-    <div class="navigation fixed top-0 transition-all duration-300 overflow-hidden">
-      <div class="drawer lg:drawer-open">
+    <div class=" navigation fixed top-0 transition-all duration-300 overflow-hidden">
+      <div class="drawer lg:drawer-open ">
         <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-        <div class="drawer-content flex flex-col items-center justify-center">
-          <!-- Page content here -->
-          <label for="my-drawer-2" class="btn btn-black drawer-button lg:hidden fixed top-4 left-8">
-            <i class="fa-solid fa-bars text-[20px]"></i>
-          </label>
-        </div>
-        <div class="drawer-side">
+        
+        <div class="drawer-side ">
           <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
           <ul class="dark:bg-[#24303F] dark:text-white menu p-4 w-80  min-h-full bg-slate-100 text-base-content">
             <div class="mt-3 mb-6">
@@ -126,9 +121,9 @@
         </div>
       </div>
     </div>
-
-    <div class="main sm:w-full md:w-full dark:bg-[#1C2434] bg-white dark:text-white text-black">
-      <header class="sticky top-0 z-999 flex w-full bg-white dark:bg-[#24303F] drop-shadow-1 dark:drop-shadow-none">
+    
+    <div class="main sm:w-full md:w-full dark:bg-[#1C2434]  bg-white dark:text-white text-black">
+      <header class="sticky top-0 flex w-full bg-white dark:bg-[#24303F] drop-shadow-1 dark:drop-shadow-none">
         <div
           class="flex flex-grow items-center justify-end md:justify-end lg:justify-between px-4 py-4 shadow-2 md:px-6 2xl:px-11">
           <div class="hidden lg:block">
@@ -136,6 +131,13 @@
               class="toggleMenu cursor-pointer bg-[#F1F5F9] w-10 h-10 rounded-full flex justify-center items-center dark:bg-[#313D4A]">
               <i class="fa-solid fa-bars text-[20px]"></i>
             </div>
+          </div>
+
+          <div class=" drawer-content flex flex-col items-center justify-center">
+            <!-- Page content here -->
+            <label for="my-drawer-2" class=" btn btn-black drawer-button lg:hidden fixed top-4 left-8">
+              <i class="fa-solid fa-bars text-[20px]"></i>
+            </label>
           </div>
 
           <div class="hidden sm:block">
@@ -469,210 +471,244 @@
       </header>
 
       <!-- content -->
-     <section class="p-6">
-      <div class="shadow rounded">
-        <table class="table">
-          <!-- head -->
-          <thead class="uppercase">
-            <tr>
-              <th>
-                <label>
-                  <input type="checkbox" class="checkbox" />
-                </label>
-              </th>
-             
-              <th>Name</th>
-              <th>Email</th>
-              <th>Phone</th>
-              <th>Joined Date </th>
-              <th>Status </th>
-              <th>actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- row 1 -->
-            <tr>
-              <th>
-                <label>
-                  <input type="checkbox" class="checkbox" />
-                </label>
-              </th>
-              <td>
-                <div class="flex items-center gap-3">
-                  <div class="avatar">
-                    <div class="mask mask-squircle w-12 h-12">
-                      <img class=" rounded-full" src="https://www.getadmintoolkit.com/images/avatar2.png" alt="Avatar Tailwind CSS Component" />
+      <section class="lg:p-6 p-2">
+        <div class="shadow rounded">
+          <div class="flex justify-between items-center p-3">
+            <div>
+              <h2 class="text-[#475569] text-[20px] font-semibold mb-5 dark:text-white">User List</h2>
+              <label class="input input-bordered flex items-center gap-2 dark:bg-[#24303F] dark:border">
+                <input type="text" class="grow max-w-36 lg:max-w-5xl " placeholder="Search" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                  class="w-4 h-4 opacity-70">
+                  <path fill-rule="evenodd"
+                    d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                    clip-rule="evenodd" />
+                </svg>
+              </label>
+            </div>
+            <div>
+              <div class="text-sm breadcrumbs mb-5">
+                <ul>
+                  <li><a class="text-[#4F61E3]">Home</a></li> 
+                  <li><a class="text-[#4F61E3]">Users</a></li> 
+                  
+                </ul>
+              </div>
+              <div>
+                <button  class="bg-[#4F61E3] text-sm p-3 rounded text-white h-10 flex items-center">+ Add User</button>
+              </div>
+            </div>
+          </div>
+          <div class="overflow-auto">
+            <table class="table ">
+              <!-- head -->
+              <thead class="uppercase">
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" class="checkbox" />
+                    </label>
+                  </th>
+  
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Joined Date </th>
+                  <th>Status </th>
+                  <th>actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- row 1 -->
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" class="checkbox" />
+                    </label>
+                  </th>
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="mask mask-squircle w-12 h-12">
+                          <img class=" rounded-full" src="https://www.getadmintoolkit.com/images/avatar2.png"
+                            alt="Avatar Tailwind CSS Component" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="font-bold">Hart Hagerty</div>
+                        <div class="text-sm opacity-50">United States</div>
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <div class="font-bold">Hart Hagerty</div>
-                    <div class="text-sm opacity-50">United States</div>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <span class="badge badge-ghost badge-sm">kocrevy0@thetimes.co.uk</span>
-              </td>
-              <td>+1 080-123-4567</td>
-              <td>
-                19 Aug 2022
-              </td>
-              <td >
-              <span class="bg-[#D1FAE5] py-1 text-[#216944] px-2 rounded-sm">Active</span>
-              </td>
-              <td>
-                <button class="bg-[#90DFAA] p-2 text-white shadow-lg rounded">Details</button>
-                <button class="bg-[#FF4155] p-2 text-white shadow-lg rounded">Delete</button>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <label>
-                  <input type="checkbox" class="checkbox" />
-                </label>
-              </th>
-              <td>
-                <div class="flex items-center gap-3">
-                  <div class="avatar">
-                    <div class="mask mask-squircle w-12 h-12">
-                      <img class=" rounded-full" src="https://www.getadmintoolkit.com/images/avatar2.png" alt="Avatar Tailwind CSS Component" />
+                  </td>
+                  <td>
+                    <span class="badge badge-ghost badge-sm">kocrevy0@thetimes.co.uk</span>
+                  </td>
+                  <td>+1 080-123-4567</td>
+                  <td>
+                    19 Aug 2022
+                  </td>
+                  <td>
+                    <span class="bg-[#D1FAE5] py-1 text-[#216944] px-2 rounded-sm">Active</span>
+                  </td>
+                  <td>
+                    <button class="bg-[#90DFAA] p-2 text-white shadow-lg rounded">Details</button>
+                    <button class="bg-[#FF4155] p-2 text-white shadow-lg rounded">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" class="checkbox" />
+                    </label>
+                  </th>
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="mask mask-squircle w-12 h-12">
+                          <img class=" rounded-full" src="https://www.getadmintoolkit.com/images/avatar3.png"
+                            alt="Avatar Tailwind CSS Component" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="font-bold">Eileen Diehn</div>
+                        <div class="text-sm opacity-50">United States</div>
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <div class="font-bold">Hart Hagerty</div>
-                    <div class="text-sm opacity-50">United States</div>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <span class="badge badge-ghost badge-sm">kocrevy0@thetimes.co.uk</span>
-              </td>
-              <td>+1 080-123-4567</td>
-              <td>
-                19 Aug 2022
-              </td>
-              <td >
-              <span class="bg-[#FFE4E6] py-1 text-[#80272c] px-2 rounded-sm">Inactive</span>
-              </td>
-              <td>
-                <button class="bg-[#90DFAA] p-2 text-white shadow-lg rounded">Details</button>
-                <button class="bg-[#FF4155] p-2 text-white shadow-lg rounded">Delete</button>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <label>
-                  <input type="checkbox" class="checkbox" />
-                </label>
-              </th>
-              <td>
-                <div class="flex items-center gap-3">
-                  <div class="avatar">
-                    <div class="mask mask-squircle w-12 h-12">
-                      <img class=" rounded-full" src="https://www.getadmintoolkit.com/images/avatar2.png" alt="Avatar Tailwind CSS Component" />
+                  </td>
+                  <td>
+                    <span class="badge badge-ghost badge-sm">amoakler8@shareasale.com</span>
+                  </td>
+                  <td>+1 080-123-4567</td>
+                  <td>
+                    19 Aug 2022
+                  </td>
+                  <td>
+                    <span class="bg-[#FFE4E6] py-1 text-[#80272c] px-2 rounded-sm">Inactive</span>
+                  </td>
+                  <td>
+                    <button class="bg-[#90DFAA] p-2 text-white shadow-lg rounded">Details</button>
+                    <button class="bg-[#FF4155] p-2 text-white shadow-lg rounded">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" class="checkbox" />
+                    </label>
+                  </th>
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="mask mask-squircle w-12 h-12">
+                          <img class=" rounded-full" src="https://www.getadmintoolkit.com/images/avatar4.png"
+                            alt="Avatar Tailwind CSS Component" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="font-bold">Hart Hagerty</div>
+                        <div class="text-sm opacity-50">United States</div>
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <div class="font-bold">Hart Hagerty</div>
-                    <div class="text-sm opacity-50">United States</div>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <span class="badge badge-ghost badge-sm">kocrevy0@thetimes.co.uk</span>
-              </td>
-              <td>+1 080-123-4567</td>
-              <td>
-                19 Aug 2022
-              </td>
-              <td >
-              <span class="bg-[#D1FAE5] py-1 text-[#216944] px-2 rounded-sm">Active</span>
-              </td>
-              <td>
-                <button class="bg-[#90DFAA] p-2 text-white shadow-lg rounded">Details</button>
-                <button class="bg-[#FF4155] p-2 text-white shadow-lg rounded">Delete</button>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <label>
-                  <input type="checkbox" class="checkbox" />
-                </label>
-              </th>
-              <td>
-                <div class="flex items-center gap-3">
-                  <div class="avatar">
-                    <div class="mask mask-squircle w-12 h-12">
-                      <img class=" rounded-full" src="https://www.getadmintoolkit.com/images/avatar2.png" alt="Avatar Tailwind CSS Component" />
+                  </td>
+                  <td>
+                    <span class="badge badge-ghost badge-sm">kocrevy0@thetimes.co.uk</span>
+                  </td>
+                  <td>+1 7332-890-3067</td>
+                  <td>
+                    19 Aug 2022
+                  </td>
+                  <td>
+                    <span class="bg-[#D1FAE5] py-1 text-[#216944] px-2 rounded-sm">Active</span>
+                  </td>
+                  <td>
+                    <button class="bg-[#90DFAA] p-2 text-white shadow-lg rounded">Details</button>
+                    <button class="bg-[#FF4155] p-2 text-white shadow-lg rounded">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" class="checkbox" />
+                    </label>
+                  </th>
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="mask mask-squircle w-12 h-12">
+                          <img class=" rounded-full" src="https://www.getadmintoolkit.com/images/avatar3.png"
+                            alt="Avatar Tailwind CSS Component" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="font-bold">Bailie Coulman</div>
+                        <div class="text-sm opacity-50">United States</div>
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <div class="font-bold">Hart Hagerty</div>
-                    <div class="text-sm opacity-50">United States</div>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <span class="badge badge-ghost badge-sm">kocrevy0@thetimes.co.uk</span>
-              </td>
-              <td>+1 080-123-4567</td>
-              <td>
-                19 Aug 2022
-              </td>
-              <td >
-              <span class="bg-[#D1FAE5] py-1 text-[#216944] px-2 rounded-sm">Active</span>
-              </td>
-              <td>
-                <button class="bg-[#90DFAA] p-2 text-white shadow-lg rounded">Details</button>
-                <button class="bg-[#FF4155] p-2 text-white shadow-lg rounded">Delete</button>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <label>
-                  <input type="checkbox" class="checkbox" />
-                </label>
-              </th>
-              <td>
-                <div class="flex items-center gap-3">
-                  <div class="avatar">
-                    <div class="mask mask-squircle w-12 h-12">
-                      <img class=" rounded-full" src="https://www.getadmintoolkit.com/images/avatar2.png" alt="Avatar Tailwind CSS Component" />
+                  </td>
+                  <td>
+                    <span class="badge badge-ghost badge-sm">bcoulman1@yolasite.com</span>
+                  </td>
+                  <td>+1 4232-422-3567</td>
+                  <td>
+                    19 Aug 2022
+                  </td>
+                  <td>
+                    <span class="bg-[#D1FAE5] py-1 text-[#216944] px-2 rounded-sm">Active</span>
+                  </td>
+                  <td>
+                    <button class="bg-[#90DFAA] p-2 text-white shadow-lg rounded">Details</button>
+                    <button class="bg-[#FF4155] p-2 text-white shadow-lg rounded">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" class="checkbox" />
+                    </label>
+                  </th>
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="mask mask-squircle w-12 h-12">
+                          <img class=" rounded-full" src="https://www.getadmintoolkit.com/images/avatar1.png"
+                            alt="Avatar Tailwind CSS Component" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="font-bold">Stella Ganderton</div>
+                        <div class="text-sm opacity-50">United States</div>
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <div class="font-bold">Hart Hagerty</div>
-                    <div class="text-sm opacity-50">United States</div>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <span class="badge badge-ghost badge-sm">kocrevy0@thetimes.co.uk</span>
-              </td>
-              <td>+1 080-123-4567</td>
-              <td>
-                19 Aug 2022
-              </td>
-              <td >
-              <span class="bg-[#FFE4E6] py-1 text-[#80272c] px-2 rounded-sm">Inactive</span>
-              </td>
-              <td>
-                <button class="bg-[#90DFAA] p-2 text-white shadow-lg rounded">Details</button>
-                <button class="bg-[#FF4155] p-2 text-white shadow-lg rounded">Delete</button>
-              </td>
-            </tr>
-            
-          </tbody>
-          <!-- foot -->
-        
-          
-        </table>
-      </div>
-     </section>
+                  </td>
+                  <td>
+                    <span class="badge badge-ghost badge-sm">sganderton2@tuttocitta.it</span>
+                  </td>
+                  <td>+1 080-123-4567</td>
+                  <td>
+                    19 Aug 2022
+                  </td>
+                  <td>
+                    <span class="bg-[#FFE4E6] py-1 text-[#80272c] px-2 rounded-sm">Inactive</span>
+                  </td>
+                  <td>
+                    <button class="bg-[#90DFAA] p-2 text-white shadow-lg rounded">Details</button>
+                    <button class="bg-[#FF4155] p-2 text-white shadow-lg rounded">Delete</button>
+                  </td>
+                </tr>
+  
+              </tbody>
+              <!-- foot -->
+  
+  
+            </table>
+          </div>
+        </div>
+      </section>
     </div>
+    
   </div>
 
-
+  
   <script src="js/app.js"></script>
 
 </body>
