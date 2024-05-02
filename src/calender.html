@@ -20,12 +20,12 @@
 <body>
   <div class="w-full flex">
     <!-- left-sidebar -->
-    <div class="navigation fixed top-0 transition-all duration-300 overflow-hidden">
-      <div class="drawer lg:drawer-open ">
+    <div class="navigation lg:fixed z-40 lg:z-0  top-0 transition-all duration-300 overflow-hidden">
+      <div class="drawer lg:drawer-open  ">
         <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content flex flex-col items-center justify-center">
           <!-- Page content here -->
-          <label for="my-drawer-2" class="btn btn-black drawer-button lg:hidden fixed top-4 left-8">
+          <label for="my-drawer-2" class="btn  btn-black drawer-button lg:hidden fixed top-4 left-8">
             <i class="fa-solid fa-bars text-[20px]"></i>
           </label>
         </div>
@@ -134,7 +134,7 @@
     </div>
 
     <div class="main sm:w-full md:w-full dark:bg-[#1C2434] bg-white dark:text-white text-black">
-      <header class="sticky top-0 left-0 right-0 lg:z-30 flex w-full bg-white dark:bg-[#24303F] drop-shadow-1 dark:drop-shadow-none">
+      <header class="fixed lg:sticky top-0 left-0 right-0 z-30 flex w-full bg-white dark:bg-[#24303F] drop-shadow-1 dark:drop-shadow-none">
         <div
           class="flex flex-grow items-center justify-end md:justify-end lg:justify-between px-4 py-4 shadow-2 md:px-6 2xl:px-11">
           <div class="hidden lg:block">
