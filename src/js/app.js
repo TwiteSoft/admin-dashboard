@@ -10,27 +10,29 @@ function toggleMenu() {
   main.classList.toggle("active");
 }
 
+// dark mode option
 
-//============ dark mode option==============
-
-const toggleThemeButton = document.getElementById("toggleThemeButton");
 const htmlTag = document.getElementsByTagName("html")[0];
+const toggle = document.querySelector(".toggle1");
 
-const isDarkMode = JSON.parse(localStorage.getItem("isDarkMode"));
+const getMode = localStorage.getItem('mode');
 
-if (isDarkMode) {
-  htmlTag.classList.add("dark");
-} else {
-  htmlTag.classList.remove("dark");
+if (getMode && getMode === "dark") {
+  htmlTag.classList.add('dark');
+  toggle.classList.add('active');
 }
 
-toggleThemeButton.addEventListener("click", () => {
-  htmlTag.classList.toggle("dark");
+toggle.addEventListener('click', () => {
+  htmlTag.classList.toggle('dark');
 
-  const isDarkModeEnabled = htmlTag.classList.contains("dark");
-
-  localStorage.setItem("isDarkMode", JSON.stringify(isDarkModeEnabled));
+  if (!htmlTag.classList.contains('dark')) {
+    return localStorage.setItem('mode', 'light')
+  }
+  localStorage.setItem('mode', 'dark')
 });
+
+toggle.addEventListener('click', () => toggle.classList.toggle('active'))
+
 
 //================= User profile==============
 // Function to toggle visibility of userdropdown
