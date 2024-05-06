@@ -19,7 +19,8 @@
         <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content flex flex-col items-center justify-center">
           <!-- Page content here -->
-          <label for="my-drawer-2" class="btn btn-black dark:bg-[#24303F] dark:shadow dark:border-1 dark:border-[#334155]   dark:text-white drawer-button lg:hidden fixed top-4 left-8">
+          <label for="my-drawer-2"
+            class="btn btn-black dark:bg-[#24303F] dark:shadow dark:border-1 dark:border-[#334155]   dark:text-white drawer-button lg:hidden fixed top-4 left-8">
             <i class="fa-solid fa-bars text-[20px]"></i>
           </label>
         </div>
@@ -28,15 +29,67 @@
           <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
           <ul class="dark:bg-[#24303F] dark:text-white menu p-4 w-80  min-h-full bg-slate-100 text-base-content">
             <li class="mt-2 mb-6 pr-5">
-              <details class="dropdown">
-                <summary class=" text-xl font-semibold"> <img class="w-7 h-17" src="../images/logo.png"
-                    alt="" />TwiteSoft</summary>
+              <div class="dropdown">
+                <div tabindex="0" class="flex items-center gap-5 text-xl font-semibold">
+                  <div class="flex gap-2 items-center">
+                    <img class="w-7 h-17" src="../images/logo.png" alt="" />
+                    <span>TwiteAdmin </span>
+                  </div>
+                  <div><i class="fa-solid fa-angle-down text-[15px]"></i></div>
+                </div>
                 <ul
-                  class="ml-5 right-0 shadow menu dropdown-content z-50  rounded-box w-full bg-slate-100 dark:text-white dark:bg-[#24303F] dark:border border-[#334155]">
-                  <li><a>Admin 1</a></li>
-                  <li><a>Admin 2</a></li>
+                  class="top-12 left-0 right-0 mx-auto shadow menu dropdown-content z-50  rounded-box w-full h-64 bg-slate-100 dark:text-white overflow-auto dark:bg-[#24303F] dark:border border-[#334155]">
+                  <div>
+                    <li>
+                      <a class="flex items-center   border-stroke px-[18px] py-3 hover:bg-gray-100 dark:border-strokedark dark:hover:bg-gray-700"
+                        href="">
+                        <div class="h-10 w-10">
+                          <img class="rounded-full" src="./images/user/user1.jpeg" alt="User" />
+                        </div>
+
+                        <div class="ml-2">
+                          <h6 class="text-sm font-medium text-black dark:text-white">
+                            Mariya Desoja
+                          </h6>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="flex items-center  border-t border-stroke px-[18px] py-3 hover:bg-gray-100 dark:border-strokedark dark:hover:bg-gray-700"
+                        href="">
+                        <div class="h-10 w-10">
+                          <img class="rounded-full" src="./images/user/user1.jpeg" alt="User" />
+                        </div>
+
+                        <div class="ml-2">
+                          <h6 class="text-sm font-medium text-black dark:text-white">
+                            Yash Glean
+                          </h6>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="flex items-center  border-t border-stroke px-[18px] py-3 hover:bg-gray-100 dark:border-strokedark dark:hover:bg-gray-700"
+                        href="">
+                        <div class="h-10 w-10">
+                          <img class="rounded-full" src="./images/user/user1.jpeg" alt="User" />
+                        </div>
+
+                        <div class="ml-2">
+                          <h6 class="text-sm font-medium text-black dark:text-white">
+                            Marcu Daniel
+                          </h6>
+                        </div>
+                      </a>
+                    </li>
+
+                    <a href="#"
+                      class="flex items-center justify-center rounded absolute right-4 px-4 py-2.5 dark:bg-gray-700 bg-[#4070F4] text-white w-[100px]">
+                      + Add Shop</a>
+
+                  </div>
                 </ul>
-              </details>
+              </div>
 
             </li>
             <li class="mt-2 pr-3">
@@ -173,9 +226,9 @@
           <div class="flex items-center gap-3 2xsm:gap-7">
             <ul class="flex items-center gap-2 2xsm:gap-4">
               <li>
-                 <!-- Dark Mode Toggler -->
+                <!-- Dark Mode Toggler -->
                 <div class="toggle1"></div>
-                
+
                 <!-- Dark Mode Toggler -->
               </li>
 
@@ -600,7 +653,6 @@
                     Day
                   </button>
                   <button
-
                     class="rounded   px-3 py-1 text-xs font-medium text-black  dark:hover:bg-black  dark:bg-[#24303F] dark:text-white ">
                     Week
                   </button>
