@@ -131,7 +131,7 @@ body {
 @media screen and (min-width:680px) and (max-width:1024px) {
     .navigation {
         width: 100%;
-        z-index: 2;
+        /* z-index: 2; */
         transition: 0.2s;
 
     }
