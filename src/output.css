@@ -2573,6 +2573,10 @@ html:has(.drawer-toggle:checked) {
   height: 100%;
 }
 
+.h-72 {
+  height: 18rem;
+}
+
 .min-h-full {
   min-height: 100%;
 }
