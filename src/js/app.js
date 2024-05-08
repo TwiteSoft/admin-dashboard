@@ -1,14 +1,17 @@
 //=========== Menu option==============
 
 function toggleMenu() {
-  let toggleMenu = document.querySelector(".toggleMenu");
-
+  // let toggleMenu = document.querySelector(".toggleMenu");
+  let navigation = document.querySelector('.navigation');
   let main = document.querySelector(".main");
+ 
 
-  toggleMenu.classList.toggle("active");
-
+  // toggleMenu.classList.toggle("active");
+  navigation.classList.toggle('active1');
   main.classList.toggle("active");
 }
+
+
 
 // dark mode option
 

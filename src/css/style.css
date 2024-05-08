@@ -24,16 +24,43 @@ body {
     left: 300px;
     min-height: 100vh;
     transition: 0.2s;
-
-
 }
 
-.main.active {
+.navigation.active1 ul{
+    width:65px;
+    box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+}
+
+.main.active{
     width: calc(100% - 65px);
     left: 65px;
 }
 
 
+.navigation ul li a .icon{
+    min-width: 24px;
+    height: 24px;
+    line-height: 24px;  
+    display: block;
+}
+.navigation ul li:hover .icon i{
+    color:black;
+}
+.navigation ul li a:hover span {
+    color:rgba(0, 0, 0, 0.644);
+}
+
+.dark .navigation ul li:hover{
+    background-color: #18191a61;
+    border-radius: 8px;
+}
+.dark .navigation ul li a:hover span{
+    color:#fff;
+}
+
+.dark .navigation ul li:hover .icon i{
+    color:#fff;
+}
 
 .drop-shadow-1 {
     --tw-drop-shadow: drop-shadow(0px 1px 0px #E2E8F0);
@@ -58,8 +85,8 @@ body {
 
 .toggle1{
     position: relative;
-    height: 30px;
-    width:60px;
+    height: 25px;
+    width:50px;
     background-color: #fff;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     cursor: pointer;
@@ -69,19 +96,19 @@ body {
 .toggle1::before{
     content: "";
     position: absolute;
-    height: 22px;
-    width: 22px;
+    height: 19px;
+    width: 19px;
     background-color: #4070f4;
     border-radius: 50%;
     top: 50%;
-    left: 6px;
+    left: 4px;
     transform: translateY(-50%);
     transition: all .3s ease-in-out;
 }
 
 .toggle1.active::before{
     background-color: #18191a;
-    left: calc(100% - 20px - 6px);
+    left: calc(100% - 19px - 4px);
 }
 
 
