@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="output.css" />
   <link rel="stylesheet" href="css/style.css" />
-
   <title>Dashboard</title>
   <script src="https://kit.fontawesome.com/201614f162.js" crossorigin="anonymous"></script>
 </head>
@@ -14,124 +13,209 @@
 <body>
   <div class="w-full flex">
     <!-- left-sidebar -->
-    <div class="navigation lg:fixed z-40 lg:z-0 top-0 transition-all duration-300 overflow-hidden">
-      <div class="drawer lg:drawer-open">
-        <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-        <div class="drawer-content flex flex-col items-center justify-center">
-          <!-- Page content here -->
-          <label for="my-drawer-2" class="btn btn-black drawer-button lg:hidden fixed top-4 left-8">
-            <i class="fa-solid fa-bars text-[20px]"></i>
-          </label>
-        </div>
-        <div class="drawer-side">
-          <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
-          <ul class="dark:bg-[#24303F] dark:text-white menu p-4 w-80  min-h-full bg-slate-100 text-base-content">
-            <div class="mt-3 mb-6">
-              <a class="text-3xl font-bold flex gap-3 items-center" href="dashboard.html">
-                <img class="w-10 h-10" src="../images/logo.png" alt="" />
-                <span>Twite UI</span></a>
-            </div>
-            <li class="mt-2 pr-3">
-              <a href="dashboard.html">
-                <div class="flex gap-4">
-                  <span><i class="fa-solid fa-house text-[18px]"></i></span>
-                  <span class="text-[16px]">Dashboard</span>
-                </div>
-              </a>
-            </li>
-            <li class="mt-2 pr-3">
-              <a href="users.html">
-                <div class="flex gap-4">
-                  <span><i class="fa-solid fa-user text-[18px]"></i></span>
-                  <span class="text-[16px]">Users</span>
-                </div>
-              </a>
-            </li>
-            <li class="mt-2 pr-5">
-              <details close>
-                <summary class="text-[17px]">
-                  <div class="flex gap-4">
-                    <span><i class="fa-brands fa-product-hunt text-[18px]"></i></span>
-                    <span class="text-[16px]">Products</span>
-                  </div>
-                </summary>
-                <ul>
-                  <li><a href="" class="text-[17px]">Submenu 1</a></li>
-                  <li><a href="" class="text-[17px]">Submenu 2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li class="mt-2 pr-5">
-              <details close>
-                <summary class="text-[17px]">
-                  <div class="flex gap-4">
-                    <span><i class="fa-solid fa-money-check text-[18px]"></i></span>
-                    <span class="text-[16px]">Transaction</span>
-                  </div>
-                </summary>
+    <div class="navigation ">
+      <div class=" lg:fixed top-0 transition-all duration-300 overflow-hidden">
+        <div class="drawer lg:drawer-open">
+          <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+          <div class="drawer-content flex flex-col items-center justify-center">
+            <!-- Page content here -->
+            <label for="my-drawer-2"
+              class="btn btn-black dark:bg-[#24303F] dark:shadow dark:border-1 dark:border-[#334155]   dark:text-white drawer-button lg:hidden fixed top-4 left-8">
+              <i class="fa-solid fa-bars text-[20px]"></i>
+            </label>
+          </div>
+          <div class="drawer-side">
 
-                <ul>
-                  <li><a href="" class="text-[17px]">Submenu 1</a></li>
-                  <li><a href="" class="text-[17px]">Submenu 2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li class="mt-2 pr-5">
-              <details>
-                <summary class="text-[17px]">
-                  <div class="flex gap-4">
-                    <span><i class="fa-brands fa-wpforms text-[18px] icon"></i></span><span
-                      class="text-[16px]">Others</span>
+            <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
+            <ul
+              class="dark:bg-[#24303F]  dark:text-white menu border-r dark:border-none w-[300px] bg-white lg:bg-white shadow-inner min-h-full text-base-content">
+              <li class="mt-2 mb-6 ">
+                <div class="dropdown rounded-none hover:bg-transparent ">
+                  <div tabindex="0" class="flex items-center justify-center  gap-5 text-xl font-semibold">
+                    <div class="flex gap-4 justify-center items-center">
+                      <img class="w-10 h-8 mx-auto block" src="../images/logo.png" alt="" />
+                      <span>TwiteAdmin </span>
+                    </div>
+                    <div><i class="fa-solid fa-angle-down text-[15px]"></i></div>
                   </div>
-                </summary>
-                <ul>
-                  <li><a class="text-[17px]">Submenu 1</a></li>
-                  <li><a class="text-[17px]">Submenu 2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li class="mt-2">
-              <a href="./form.html">
-                <div class="flex gap-4">
-                  <span><i class="fa-solid fa-envelope text-[18px]"></i></span>
-                  <span class="text-[16px]">Form</span>
+                  <ul
+                    class="top-0 right-0 left-0  mx-auto shadow-inner menu dropdown-content z-50 w-[280px] h-72 bg-[#F2F2F2] dark:text-white overflow-auto dark:bg-[#24303F] border dark:border dark:border-[#334155] rounded-b-md">
+                    <div>
+                      <li>
+                        <a class="flex items-center px-[18px] hover:bg-gray-000 dark:border-strokedark  dark:hover:bg-gray-700"
+                          href="">
+                          <div tabindex="0" class="flex items-center justify-center gap-5 text-xl font-semibold">
+                            <div class="flex gap-4 items-center">
+                              <img class="w-8 h-8" src="../images/logo.png" alt="" />
+                              <span>TwiteAdmin </span>
+                            </div>
+                            <div><i class="fa-solid fa-angle-down text-[15px]"></i></div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="flex items-center  border-stroke px-[18px] hover:bg-gray-200 dark:border-strokedark dark:hover:bg-gray-700"
+                          href="">
+                          <div class="h-10 w-10">
+                            <img class="rounded-full" src="./images/user/user1.jpeg" alt="User" />
+                          </div>
+
+                          <div class="ml-2">
+                            <h6 class="text-sm font-medium text-black dark:text-white">
+                              Mariya Desoja
+                            </h6>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="flex items-center  border-t border-stroke px-[18px] hover:bg-gray-000 dark:border-strokedark dark:hover:bg-gray-700"
+                          href="">
+                          <div class="h-10 w-10">
+                            <img class="rounded-full" src="./images/user/user1.jpeg" alt="User" />
+                          </div>
+
+                          <div class="ml-2">
+                            <h6 class="text-sm font-medium text-black dark:text-white">
+                              Yash Glean
+                            </h6>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="flex items-center  border-t border-stroke px-[18px] hover:bg-gray-200 dark:border-strokedark dark:hover:bg-gray-700"
+                          href="">
+                          <div class="h-10 w-10">
+                            <img class="rounded-full" src="./images/user/user1.jpeg" alt="User" />
+                          </div>
+
+                          <div class="ml-2">
+                            <h6 class="text-sm font-medium text-black dark:text-white">
+                              Marcu Daniel
+                            </h6>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="flex items-center justify-center mt-3 border-t border-stroke px-[18px] py-3 hover:bg-gray-400  dark:bg-gray-700 h-9 bg-[#D2D2D2] text-[#333] dark:text-white dark:border-strokedark dark:hover:bg-gray-700"
+                          href="">+ Add Shop
+                        </a>
+                      </li>
+                    </div>
+                  </ul>
                 </div>
-              </a>
-            </li>
-            <li class="mt-2">
-              <a href="table.html">
-                <div class="flex gap-4">
-                  <span><i class="fa-brands fa-gg-circle text-[18px]"></i></span>
-                  <span class="text-[16px]">Table</span>
-                </div>
-              </a>
-            </li>
-            <li class="mt-2">
-              <a href="calender.html">
-                <div class="flex gap-4">
-                  <span><i class="fa-brands fa-blogger text-[18px]"></i></span>
-                  <span class="text-[16px]">Calender</span>
-                </div>
-              </a>
-            </li>
-            <li class="mt-2">
-              <a href="">
-                <div class="flex gap-4">
-                  <span><i class="fa-solid fa-gear text-[18px]"></i></span>
-                  <span class="text-[16px]">Settings</span>
-                </div>
-              </a>
-            </li>
-          </ul>
+              </li>
+              <li class="mt-2 pr-5 ">
+                <a href="dashboard.html">
+                  <div class="flex items-center justify-center gap-4">
+                    <span class="icon"><i class="fa-solid  fa-house-chimney text-[18px] text-[#6B7280]"></i></span>
+                    <span class="text-base dark:text-[#dcdee3]">Dashboard</span>
+                  </div>
+                </a>
+              </li>
+              <li class="mt-2 pr-5 ">
+                <a href="users.html">
+                  <div class="flex items-center justify-center gap-4">
+                    <span class="icon"><i class="fa-solid  fa-user text-[18px] text-[#6B7280]"></i></span>
+                    <span class="text-base dark:text-[#dcdee3]">Users</span>
+                  </div>
+                </a>
+              </li>
+              <li class="mt-2 pr-5 ">
+                <a href="dashboard.html">
+                  <div class="flex items-center justify-center gap-4">
+                    <span class="icon"><i class="fa-solid fa-message mt-1 text-[18px] text-[#6B7280]"></i></span>
+                    <span class="text-base dark:text-[#dcdee3]">Message</span>
+                  </div>
+                </a>
+              </li>
+              <li class="mt-2 pr-5 ">
+                <a href="dashboard.html">
+                  <div class="flex items-center justify-center gap-4">
+                    <span class="icon"><i class="fa-solid fa-receipt  text-[18px] text-[#6B7280]"></i></span>
+                    <span class="text-base dark:text-[#dcdee3]">Invoice</span>
+                  </div>
+                </a>
+              </li>
+              <li class="mt-2 pr-5">
+                <details>
+                  <summary>
+                    <div class="flex items-center justify-center gap-5">
+                      <span class="icon"><i class="fa-regular fa-rectangle-list text-[18px] text-[#6B7280]"></i></span>
+                      <span class="text-base dark:text-[#dcdee3]">Forms</span>
+                    </div>
+                  </summary>
+                  <ul>
+                    <li><a href="" class="text-[17px] ml-5">Form Layout</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li class="mt-2 pr-5">
+                <details>
+                  <summary>
+                    <div class="flex items-center justify-center gap-5">
+                      <span class="icon"><i class="fa-solid fa-file-lines text-[18px] text-[#6B7280]"></i></span>
+                      <span class="text-base dark:text-[#dcdee3] ml-2">Pages</span>
+                    </div>
+                  </summary>
+                  <ul>
+                    <li><a href="" class="text-[17px] ml-5">Pricing</a></li>
+                    <li><a href="" class="text-[17px] ml-5">services</a></li>
+                    <li><a href="" class="text-[17px] ml-5">FAQ</a></li>
+                    <li><a href="" class="text-[17px] ml-5">404</a></li>
+                    <li><a href="" class="text-[17px] ml-5">Stater</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li class="mt-2 pr-5">
+                <details>
+                  <summary>
+                    <div class="flex items-center justify-center gap-5">
+                      <span class="icon"><i class="fa-solid fa-layer-group text-[18px] text-[#6B7280]"></i></span>
+                      <span class="text-base dark:text-[#dcdee3]">Components</span>
+                    </div>
+                  </summary>
+                  <ul>
+                    <li><a href="" class="text-[17px] ml-5">Accordian </a></li>
+                    <li><a href="" class="text-[17px] ml-5">Modal </a></li>
+                    <li><a href="" class="text-[17px] ml-5">Alerts </a></li>
+                    <li><a href="" class="text-[17px] ml-5">Breadcum </a></li>
+                    <li><a href="" class="text-[17px] ml-5">Carousel </a></li>
+                    <li><a href="" class="text-[17px] ml-5">Pagination  </a></li>
+                    <li><a href="" class="text-[17px] ml-5">Table</a></li>
+                    <li><a href="" class="text-[17px] ml-5">Diff</a></li>
+                    <li><a href="" class="text-[17px] ml-5">Tabs </a></li>
+                    
+                  </ul>
+                </details>
+              </li>
+              <li class="mt-2 pr-5 ">
+                <a href="dashboard.html">
+                  <div class="flex items-center justify-center gap-4">
+                    <span class="icon"><i class="fa-solid fa-calendar text-[18px] text-[#6B7280]"></i></span>
+                    <span class="text-base dark:text-[#dcdee3]">Calender</span>
+                  </div>
+                </a>
+              </li>
+              <li class="mt-2 pr-5 ">
+                <a href="dashboard.html">
+                  <div class="flex items-center justify-center gap-4">
+                    <span class="icon"><i class="fa-solid fa-gear text-[18px] text-[#6B7280]"></i></span>
+                    <span class="text-base dark:text-[#dcdee3]">Setting</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="main sm:w-full md:w-full dark:bg-[#1C2434] bg-white dark:text-white text-black">
+    <div class="main sm:w-full shadow-inner  md:w-full dark:bg-[#1C2434] bg-white dark:text-white text-black">
+
       <header
-        class="fixed lg:sticky top-0 right-0 left-0  flex w-full bg-white dark:bg-[#24303F] drop-shadow-1 dark:drop-shadow-none">
+        class="sticky top-0 right-0 left-0  flex w-full bg-white dark:bg-[#24303F] drop-shadow-1 dark:drop-shadow-none">
         <div
-          class="flex flex-grow items-center justify-end md:justify-end lg:justify-between px-4 py-4 shadow-2 md:px-6 2xl:px-11">
+          class="flex flex-grow items-center justify-end md:justify-end lg:justify-between px-4 py-4 shadow-2 md:px-6 2xl:px-6">
           <div class="hidden lg:block">
             <div onclick="toggleMenu()"
               class="toggleMenu cursor-pointer bg-[#F1F5F9] w-10 h-10 rounded-full flex justify-center items-center dark:bg-[#313D4A]">
@@ -163,10 +247,8 @@
           <div class="flex items-center gap-3 2xsm:gap-7">
             <ul class="flex items-center gap-2 2xsm:gap-4">
               <li>
-                <!-- Dark Mode  -->
-                <label class="cursor-pointer grid place-items-center">
-                  <input id="toggleThemeButton" type="checkbox" value="synthwave" class=" toggle theme-controller" />
-                </label>
+                <!-- Dark Mode Toggler -->
+                <div class="toggle1"></div>
                 <!-- Dark Mode Toggler -->
               </li>
 
@@ -189,7 +271,7 @@
 
                 <!-- Dropdown Start -->
                 <div
-                  class="absolute dropdown-content z-[1] -right-24 mt-2.5 flex h-[360px] w-[300px] flex-col rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-[#24303F] sm:right-0 sm:w-80">
+                  class="absolute dropdown-content z-[1] -right-16 mt-2.5 flex h-[360px] w-[300px] flex-col rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-[#24303F] sm:right-0 sm:w-80">
                   <div class="px-[18px] py-3">
                     <h5 class="text-sm font-medium text-bodydark2">
                       Notification
@@ -254,11 +336,11 @@
               <!-- Chat Notification Area -->
               <li class="relative dropdown">
                 <a class="relative flex h-[34px] w-[34px] items-center justify-center rounded-full border-[0.5px] border-stroke bg-gray hover:text-primary dark:border-strokedark dark:bg-meta-4 dark:text-white"
-                  href="#" @click.prevent="dropdownOpen = ! dropdownOpen; notifying = false">
-                  <span :class="!notifying && 'hidden'"
-                    class="absolute -right-0.5 -top-0.5 z-1 h-2 w-2 rounded-full bg-meta-1">
+                  href="#">
+                  <span class="absolute -top-0.5 right-0 z-1 h-2 w-2 rounded-full bg-meta-1">
                     <span
-                      class="absolute -z-1 inline-flex h-full w-full animate-ping rounded-full bg-meta-1 opacity-75"></span>
+                      class="absolute -z-1 inline-flex h-full w-full animate-ping rounded-full bg-meta-1 opacity-75">
+                    </span>
                   </span>
 
                   <svg class="fill-current duration-300 ease-in-out" width="18" height="18" viewBox="0 0 18 18"
@@ -469,8 +551,8 @@
       </header>
 
       <!-- content -->
-      <section class="p-6 mt-20 lg:mt-0">
-        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
+      <section class="p-6 overflow-hidden">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 ">
           <div class="p-6 bg-[#FFFFFF] shadow rounded-md dark:bg-[#24303F]">
             <div class="flex items-center gap-8">
               <div class="flex items-center gap-4 ">
@@ -479,10 +561,10 @@
                   <i class="fa-solid fa-dollar-sign text-[24px] text-[#8B5CF6]"></i>
                 </div>
                 <div>
-                  <p class="text-sm tracking-wide text-slate-500 dark:text-white dark:text-white">
+                  <p class="text-sm tracking-wide text-slate-500  dark:text-white">
                     Total Sales
                   </p>
-                  <h4 class="text-[24px] font-semibold text-[#475569] dark:text-white dark:text-white">
+                  <h4 class="text-[24px] font-semibold text-[#475569] dark:text-white">
                     $25,275
                   </h4>
                 </div>
@@ -551,7 +633,7 @@
                   <i class="fa-solid fa-angles-left text-[24px] text-[#6366F1]"></i>
                 </div>
                 <div>
-                  <p class="text-sm text-slate-500 dark:text-white">Total Refunds</p>
+                  <p class="text-sm text-slate-500 dark:text-white"> Refunds</p>
                   <h4 class="text-[24px] font-semibold text-[#475569] dark:text-white">
                     $15,275
                   </h4>
@@ -568,7 +650,7 @@
         </div>
 
         <div class="md:flex  gap-8">
-          <div class="lg:w-[800px] shadow lg:p-[30px] p-3 rounded-md mt-10">
+          <div class="lg:w-[800px] dark:bg-[#24303F] shadow lg:p-[30px] p-3 rounded-md mt-10">
             <div class="flex justify-between gap-3">
               <div class="flex  gap-3 sm:gap-5">
                 <div class="w-full">
@@ -608,19 +690,18 @@
             </div>
           </div>
 
-          <div class="shadow mt-10 rounded-md lg:w-[600px]">
-            <div class="flex justify-around my-4 ">
-              <h4 class="text-xl font-bold text-black dark:text-white">
+          <div class=" mt-10 dark:bg-[#24303F] shadow rounded-md lg:w-[600px]">
+            <div class="flex justify-around md:my-5 ">
+              <h4 class="text-xl font-bold text-black dark:text-white mt-4">
                 Visitors Analytics
               </h4>
-              <div class=" flex items-center">
+              <div class="flex items-center mt-4">
                 <select name="" id=""
-                  class="  text-[#64748B]  appearance-none  py-1 pl-3 pr-2 text-sm font-medium outline-none">
+                  class="text-[#64748B] inline-flex appearance-none bg-transparent py-1 pl-3 pr-8 text-sm font-medium outline-none ">
                   <option value="">Monthly</option>
                   <option value="">Yearly</option>
                 </select>
-
-                <span class="right-3 top-1/2">
+                <span class="">
                   <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M0.47072 1.08816C0.47072 1.02932 0.500141 0.955772 0.54427 0.911642C0.647241 0.808672 0.809051 0.808672 0.912022 0.896932L4.85431 4.60386C4.92785 4.67741 5.06025 4.67741 5.14851 4.60386L9.09079 0.896932C9.19376 0.793962 9.35557 0.808672 9.45854 0.911642C9.56151 1.01461 9.5468 1.17642 9.44383 1.27939L5.50155 4.98632C5.22206 5.23639 4.78076 5.23639 4.51598 4.98632L0.558981 1.27939C0.50014 1.22055 0.47072 1.16171 0.47072 1.08816Z"
